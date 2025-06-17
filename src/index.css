@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+  height: 4rem;
+  background-color: rgb(105, 109, 134);
+  width: 100%;
+}
+.container{
+ max-width: 60rem;
+ margin: auto;
+ height: 4rem;
+} 
+.grid{
+  display: grid;
+}
+.navbar-grid{
+  grid-template-columns:.5fr 1fr ;
+  align-items: center;
+  height: 100%;
+  padding:0 32px;
+}
+.hamburger button{
+  color: rgb(166, 32, 32);
+  padding: 2px 18px;
+  background-color: black;
+  
+}
+.hamburger{
+   display: none;
+  }
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 766px) {
+  .hamburger {
+    display: inline-block;
+    text-align: end;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .mobile ul li {
+    margin: 5px;
+    color: white;
+  }
+.mobile{
+  position: absolute;
+  top: 3.7rem;
+  left:0;
+  width: 100%;
+  background-color: #5c7b7a;
+  transition: 1s ease-in 2s;
+}
+ 
+}
